@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ae.ac.adu.joe.loginandregister">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front.autofocus"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LogInAndRegister">
+        <activity
+            android:name=".Activities.DisplayRecipeContent"
+            android:exported="false" />
+        <activity
+            android:name=".DisplayPost"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.DisplayUserRecipe"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.dummyCreateRecipe"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.DisplayRecipe"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.AutoLogInActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.AddRecipe"
+            android:exported="false"
+            android:label="@string/title_activity_add_recipe"
+            android:theme="@style/Theme.LogInAndRegister.NoActionBar" />
+        <activity
+            android:name=".Activities.Community"
+            android:exported="false"
+            android:label="@string/title_activity_community"
+            android:theme="@style/Theme.LogInAndRegister.NoActionBar" />
+        <activity
+            android:name=".Activities.Profile"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Search"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Home"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.CameraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.MainActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
